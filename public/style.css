@@ -1,0 +1,17 @@
+body { font-family: Arial, sans-serif; background-color: #f4f4f9; margin: 0; padding: 20px; }
+.container { max-width: 900px; margin: 0 auto; background: white; padding: 20px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
+.header { display: flex; justify-content: space-between; align-items: center; border-bottom: 2px solid #eee; padding-bottom: 10px; margin-bottom: 20px; }
+input[type="text"], input[type="password"] { width: 100%; padding: 10px; margin: 10px 0; box-sizing: border-box; }
+button { padding: 10px 15px; background: #007bff; color: white; border: none; border-radius: 4px; cursor: pointer; }
+button:hover { background: #0056b3; }
+.danger-btn { background: #dc3545; }
+.danger-btn:hover { background: #c82333; }
+.point-btn { background: #28a745; padding: 5px 10px; font-size: 12px; }
+.layout { display: flex; gap: 20px; }
+.main-panel { flex: 2; }
+.side-panel { flex: 1; }
+.box { background: #f8f9fa; border: 1px solid #ddd; padding: 10px; height: 300px; overflow-y: auto; border-radius: 4px; }
+.answer-item, .player-score { padding: 8px; border-bottom: 1px solid #eee; display: flex; justify-content: space-between; align-items: center;}
+.time { font-size: 0.8em; color: #888; }
+.admin-btns { display: flex; gap: 5px; }
+.danger-btn { padding: 5px 10px; font-size: 12px; background: #dc3545; color: white; border: none; border-radius: 4px; cursor: pointer;}

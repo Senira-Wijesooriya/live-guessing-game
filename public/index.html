@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live Guessing Game</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="/socket.io/socket.io.js"></script>
+</head>
+<body>
+
+    <div id="login-screen" class="container">
+        <h2>Join the Game</h2>
+        <input type="text" id="username" placeholder="Username (type 'admin' for Dashboard)">
+        <input type="password" id="admin-pass" placeholder="Password (only needed for admin)">
+        <button onclick="login()">Enter</button>
+    </div>
+
+    <div id="game-screen" class="container" style="display: none;">
+        <div class="header">
+            <h2 id="welcome-text"></h2>
+            <div id="admin-controls" style="display: none;">
+                <button onclick="clearAnswers()" class="danger-btn">Clear All Answers</button>
+            </div>
+        </div>
+
+        <div class="layout">
+            <div class="main-panel">
+                <div id="player-controls">
+                    <h3>Submit Your Guess</h3>
+                    <input type="text" id="guess-input" placeholder="Movie, Game, Song...">
+                    <button onclick="submitAnswer()">Submit</button>
+                </div>
+
+                <h3>Live Answers</h3>
+                <div id="answers-list" class="box"></div>
+            </div>
+
+            <div class="side-panel">
+                <h3>Leaderboard</h3>
+                <div id="leaderboard" class="box"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
